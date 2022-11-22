@@ -13,30 +13,30 @@ class Config(object):
     LOGGER = True
     # MUST NEEDED VARS
     # set this value with your name
-    ALIVE_NAME = os.environ.get("ALIVE_NAME", None)
+    ALIVE_NAME = os.environ.get("ALIVE_NAME", "stuf cat")
     # Get the values for following 2 from my.telegram.org
-    APP_ID = int(os.environ.get("APP_ID", 6))
-    API_HASH = os.environ.get("API_HASH") or None
+    APP_ID = int(os.environ.get("APP_ID", xxx))
+    API_HASH = os.environ.get("API_HASH", "xxx") or None
     # Datbase url heroku sets it automatically else get this from elephantsql
     DB_URI = os.environ.get("DATABASE_URL", None)
     # Get this value by running python3 stringsetup.py or https://repl.it/@sandeep1709/generatestringsession
-    STRING_SESSION = os.environ.get("STRING_SESSION", None)
+    STRING_SESSION = os.environ.get("STRING_SESSION", "xxx")
     # Telegram BOT Token and bot username from @BotFather
-    TG_BOT_TOKEN = os.environ.get("TG_BOT_TOKEN") or os.environ.get(
+    TG_BOT_TOKEN = os.environ.get("TG_BOT_TOKEN", "xxx") or os.environ.get(
         "TG_BOT_TOKEN_BF_HER", None
     )
     TG_BOT_USERNAME = None
     # get this value from http://www.timezoneconverter.com/cgi-bin/findzone.tzc
-    TZ = os.environ.get("TZ", "Asia/Kolkata")
+    TZ = os.environ.get("TZ", "Asia/Jakarta")
     # set this with required cat repo link
     UPSTREAM_REPO = os.environ.get(
-        "UPSTREAM_REPO", "https://github.com/TgCatUB/catuserbot"
+        "UPSTREAM_REPO", "https://github.com/muhammadhanif71/catuserbot"
     )
     # External plugins repo
     EXTERNAL_REPO = os.environ.get("EXTERNAL_REPO", None)
     if bool(EXTERNAL_REPO and (EXTERNAL_REPO.lower() != "false")):
         if not url(EXTERNAL_REPO):
-            EXTERNAL_REPO = "https://github.com/TgCatUB/CatPlugins"
+            EXTERNAL_REPO = "https://github.com/muhammadhanif71/CatPlugins"
     else:
         EXTERNAL_REPO = None
     # if you need badcat plugins use the following vars
@@ -61,7 +61,7 @@ class Config(object):
     # set this with same app name you given for heroku
     HEROKU_APP_NAME = os.environ.get("HEROKU_APP_NAME", None)
     # Owner id to show profile link of given id as owner
-    OWNER_ID = int(os.environ.get("OWNER_ID") or 0)
+    OWNER_ID = int(os.environ.get("OWNER_ID", "1027174031") or 0)
     # set this with group id so it keeps notifying about your tagged messages or pms
     PM_LOGGER_GROUP_ID = int(
         os.environ.get("PM_LOGGER_GROUP_ID")
@@ -158,7 +158,7 @@ class Config(object):
         "GROUP_REG_SED_EX_BOT_S", r"(regex|moku|BananaButler_|rgx|l4mR)bot"
     )
     # time.py
-    COUNTRY = str(os.environ.get("COUNTRY", ""))
+    COUNTRY = str(os.environ.get("COUNTRY", "Jakarta"))
     TZ_NUMBER = int(os.environ.get("TZ_NUMBER", 1))
     # For updater plugin
     UPSTREAM_REPO_BRANCH = os.environ.get("UPSTREAM_REPO_BRANCH", "master")
