@@ -4,7 +4,7 @@ from sample_config import Config
 class Development(Config):
     # get this values from the my.telegram.org
     APP_ID = 6
-    API_HASH = "eb06d4abfb49dc3eeb1aeb98ae0f581e"
+    API_HASH = "xxx"
     # the name to display in your alive message
     ALIVE_NAME = "Your value"
     # create any PostgreSQL database (i recommend to use elephantsql) and paste that link here
@@ -16,10 +16,10 @@ class Development(Config):
     # create a private group and a rose bot to it and type /id and paste that id here (replace that -100 with that group id)
     PRIVATE_GROUP_BOT_API_ID = -100
     # command handler
-    COMMAND_HAND_LER = "."
+    COMMAND_HAND_LER = "?"
     # command hanler for sudo
     SUDO_COMMAND_HAND_LER = "."
     # External plugins repo
-    EXTERNAL_REPO = "https://github.com/TgCatUB/CatPlugins"
+    EXTERNAL_REPO = "https://github.com/muhammadhanif71/CatPlugins"
     # if you need badcat plugins set "True"
-    BADCAT = "False"
+    BADCAT = "True"
